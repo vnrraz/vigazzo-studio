@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =========================
+   VIGAZZO STUDIO V3
+========================= */
+
+:root{
+
+    --navy:#23395B;
+    --rose:#D8B4B8;
+    --rose-light:#FAF4F5;
+    --gold:#C8A96B;
+    --white:#FFFFFF;
+    --text:#444;
+    --shadow:
+        0 10px 30px rgba(0,0,0,.05),
+        0 20px 60px rgba(0,0,0,.08);
+
+}
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+.container{
+    flex:1;
+}
+body{
+
+    font-family:'Poppins',sans-serif;
+    color:var(--text);
+
+    background:
+    linear-gradient(
+        135deg,
+        #fffaf8 0%,
+        #f7e7e9 35%,
+        #e6d0ad 70%,
+        #faf6f7 100%
+    );
+
+    overflow-x:hidden;
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+
+    background:
+    rgba(255,255,255,.85)!important;
+
+    backdrop-filter:
+    blur(12px);
+
+    border-bottom:
+    1px solid rgba(0,0,0,.05);
+
+    box-shadow:
+    0 5px 25px rgba(0,0,0,.04);
+}
+
+.navbar-brand{
+
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    color:var(--navy)!important;
+}
+
+.nav-link{
+
+    color:var(--navy)!important;
+
+    font-weight:500;
+
+    transition:.3s;
+}
+
+.nav-link:hover{
+
+    color:var(--rose)!important;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    min-height:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px 20px;
+}
+
+.hero h1{
+
+    font-family:
+    'Cormorant Garamond',serif;
+
+    color:var(--navy);
+
+    font-size:5rem;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    text-shadow:
+    0 3px 15px rgba(0,0,0,.08);
+}
+
+.hero p{
+
+    max-width:700px;
+
+    line-height:1.8;
+
+    font-size:1.1rem;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+
+    border:none!important;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    background:
+    rgba(255,255,255,.90);
+
+    backdrop-filter:
+    blur(10px);
+
+    box-shadow:
+    var(--shadow);
+
+    transition:.4s;
+}
+
+.card:hover{
+
+    transform:
+    translateY(-12px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.08),
+    0 40px 80px rgba(0,0,0,.12);
+}
+
+.card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+}
+
+.card-body{
+
+    padding:25px;
+}
+
+.card-title{
+
+    font-family:
+    'Cormorant Garamond',serif;
+
+    color:var(--navy);
+
+    font-size:1.8rem;
+}
+
+.card-link{
+
+    text-decoration:none;
+
+    color:inherit;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn-vigazzo{
+
+    display:inline-block;
+
+    padding:14px 32px;
+
+    border-radius:50px;
+
+    background:var(--navy);
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.btn-vigazzo:hover{
+
+    color:white;
+
+    transform:
+    translateY(-3px);
+
+    box-shadow:
+    0 15px 35px rgba(35,57,91,.25);
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section{
+
+    padding:80px 0;
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+}
+
+.section-title h2{
+
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:3rem;
+
+    color:var(--navy);
+}
+
+.section-title p{
+
+    color:#777;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer{
+
+    margin-top:80px;
+
+    background:
+    rgba(255,255,255,.70);
+
+    backdrop-filter:
+    blur(10px);
+
+    padding: 20px;
+
+    text-align:center;
+
+    border-top:
+    1px solid rgba(0,0,0,.05);
+}
+
+footer h4{
+
+    font-family:
+    'Cormorant Garamond',serif;
+
+    color:var(--navy);
+}
+
+footer a{
+
+    text-decoration:none;
+
+    color:var(--navy);
+}
+
+/* =========================
+   WHATSAPP FIXO
+========================= */
+
+.whatsapp-float{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:68px;
+
+    height:68px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:30px;
+
+    text-decoration:none;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.25);
+
+    z-index:9999;
+
+    transition:.3s;
+}
+
+.whatsapp-float:hover{
+
+    transform:
+    scale(1.08);
+}
+
+/* =========================
+   AJUSTES RESPONSIVOS
+========================= */
+
+@media(max-width:768px){
+
+    /* HERO */
+
+    .hero{
+
+        min-height:60vh;
+
+        padding:60px 20px;
+    }
+
+    .hero h1{
+
+        font-size:2.3rem;
+
+        margin-bottom:12px;
+    }
+
+    .hero p{
+
+        font-size:.95rem;
+
+        margin-bottom:0;
+    }
+
+    /* NAVBAR */
+
+    .navbar{
+
+        padding:8px 0;
+    }
+
+    .navbar-brand{
+
+        font-size:1.5rem;
+    }
+
+    .nav-link{
+
+        padding:8px 0;
+    }
+
+    /* CARDS */
+
+    .card{
+
+        border-radius:22px;
+    }
+
+    .card-body{
+
+        padding:18px;
+    }
+
+    .card img{
+
+        height:220px;
+    }
+
+    /* SEÇÕES */
+
+    section{
+
+        padding:50px 0;
+    }
+
+    .section-title{
+
+        margin-bottom:30px;
+    }
+
+    .section-title h2{
+
+        font-size:2rem;
+    }
+
+    /* FOOTER */
+
+    footer{
+
+        margin-top:40px;
+
+        padding:20px 15px;
+    }
+
+    footer p{
+
+        margin-bottom:8px;
+    }
+
+}
+
+/* CELULARES PEQUENOS */
+
+@media(max-width:480px){
+
+    .hero{
+
+        min-height:50vh;
+
+        padding:40px 15px;
+    }
+
+    .hero h1{
+
+        font-size:1.9rem;
+    }
+
+    .hero p{
+
+        font-size:.9rem;
+    }
+
+    .navbar-brand{
+
+        font-size:1.35rem;
+    }
+
+    .card{
+
+        border-radius:18px;
+    }
+
+    footer{
+
+        padding:15px;
+    }
+
+    .whatsapp-float{
+
+        width:58px;
+        height:58px;
+
+        font-size:24px;
+
+        right:15px;
+        bottom:15px;
+    }
+
+}
+#vanta-bg{
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+
+    opacity: 0.3500;
+}
